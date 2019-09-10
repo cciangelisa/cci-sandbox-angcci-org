@@ -5,7 +5,7 @@ Table of Contents
 - Permissions
 
 # Contexts
-## Create a context as angelisamaria
+## Create a context as a non-admin user of your organization
 https://circleci.com/gh/organizations/ORGNAME/settings#contexts > `Create Context`
 Name: test > `create`
 Error: Something unexpected happened
@@ -38,8 +38,8 @@ contextName: "TEST1"
 ownerType: "ORGANIZATION"
 ```
 4. visiting (https://circleci.com/gh/ORGNAME/REPONAME/edit#env-vars) as angelisamaria to add env. var to a specific project, click `Add Variable` and creating `TEST` works. Need to determine if the env var can be read when using in a config.
-
 5. Downloading firefox and attemping to create a context that way annnndddd it worked..
+6. Clearing the cache might also work
 
 # Permissions
 Invited angelisamaria (non-admin) to the team and this was reflected in CircleCI
