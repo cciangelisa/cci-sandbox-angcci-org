@@ -42,16 +42,14 @@ ownerType: "ORGANIZATION"
 6. Clearing the cache might also work
 
 # Permissions
-Invited angelisamaria (non-admin) to the team and this was reflected in CircleCI
-angelisamaria can see other team members (https://circleci.com/team/gh/ORGNAME) and the # projects followed
-While logged in as angelisamaria, plan usage (https://circleci.com/gh/organizations/ORGNAME/settings#usage) can be viewed
-
-https://github.com/orgs/ORGNAME/people/USERNAME/repositories/ORGNAME/REPONAME views user permissions for a specific repo within the org
-
-https://circleci.com/account/plans
-Tells me the "orgs" I have permissions to, even though only one is an actual GitHub org and the other is just a user account
+- Inviting a user to the team via GitHub will be mirrored in CircleCI
+- Users can see other team members (https://circleci.com/team/gh/ORGNAME) and the # projects followed
+- While part of the org, users can view their usage (https://circleci.com/gh/organizations/ORGNAME/settings#usage)
+- A user's permissions for a specific repo within the org https://github.com/orgs/ORGNAME/people/USERNAME/repositories/ORGNAME/REPONAME 
+- Shows the "orgs" a user has permissions to, including their user account https://circleci.com/account/plans
 
 
+---
 Things to test & evaluate:
 - Using PRs
 - GH Statuses
