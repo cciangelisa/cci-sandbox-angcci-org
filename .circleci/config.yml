@@ -1,0 +1,25 @@
+version: 2
+jobs:
+  build:
+    docker:
+    - image: circleci/latest
+    steps:
+    - checkout
+    - run:
+        name: name of my build job step
+        command: |
+          echo "Hello, this is my build job"
+  test:
+    docker:
+    - image: circleci/python:2.7
+    steps:
+    - run:
+        name: name of my test job step
+        command: |
+          echo "image circleci/python:2.7"
+workflows:
+  version: 2
+  build-test-and-deploy:
+    jobs:
+    - build
+    - test
