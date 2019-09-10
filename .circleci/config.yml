@@ -7,7 +7,7 @@ jobs:
     steps:
     - run:
         name: update apt
-        command: update apt-get
+        command: apt-get update
 workflows:
   version: 2
   my-build-workflow:
