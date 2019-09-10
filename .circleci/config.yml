@@ -7,7 +7,9 @@ jobs:
     steps:
     - run:
         name: say hi
-        command: sudo apt-get update
+        command: |
+        wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+        sudo apt-get update
 workflows:
   version: 2
   my-build-workflow:
