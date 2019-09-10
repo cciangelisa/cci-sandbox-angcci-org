@@ -42,9 +42,11 @@ operationName: "CreateContext"
 contextName: "TEST1"
 ownerType: "ORGANIZATION"
 ```
-4. Downloading firefox and attemping to create a context that way 
+4. visiting (https://circleci.com/gh/angcci/cci-sandbox-angcci-org/edit#env-vars) as angelisamaria to add env. var to a specific project, click `Add Variable` and creating `TEST` works. Need to determine if the env var can be read when using in a config.
 
-5. visiting (https://circleci.com/gh/angcci/cci-sandbox-angcci-org/edit#env-vars) as angelisamaria to add env. var to a specific project, click `Add Variable` and creating `TEST` works. Need to determine if the env var can be read when using in a config.
+5. Downloading firefox and attemping to create a context that way annnndddd it worked..
+
+
 
 
 https://circleci.com/account/plans
