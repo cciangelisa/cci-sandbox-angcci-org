@@ -21,6 +21,27 @@ angelisacci was able to create the context `test`, when viewing the org users pa
 Next step: have angelisamaria follow project on Circle (https://circleci.com/gh/angcci/cci-sandbox-angcci-org) > `Follow Project` and am still unable to create a context as a non-admin
 Next step: changing angelisamaria's role to owner (https://github.com/orgs/angcci/people) and still unable to create a context
 Next step: log out and log back in, still does not work, able to click into context and view (need to try using one). Upon clicking `+ Add Environment Variable`, the same error `Something unexpected happened.` appears
+Viewing the network tab, I see the POST request to GraphQL:
+```
+locations: [{line: 2, column: 3}]
+message: "Internal error occurred."
+path: ["createContext"]
+0: "createContext"
+```
+```
+Request URL: https://circleci.com/graphql-unstable
+Request Method: POST
+Status Code: 200 OK
+```
+Request payload
+```
+{operationName: "CreateContext", variables: {,…},…}
+operationName: "CreateContext"
+...
+contextName: "TEST1"
+ownerType: "ORGANIZATION"
+```
+
 Next step: visiting (https://circleci.com/gh/angcci/cci-sandbox-angcci-org/edit#env-vars) as angelisamaria to add env. var to a specific project, click `Add Variable` and creating `TEST` works. Need to determine if the env var can be read when using in a config.
 
 
