@@ -17,3 +17,6 @@ Name: test > `create`
 Error: Something unexpected happened
 https://circleci.com/docs/2.0/contexts/#creating-and-using-a-context
 `Note: Any organization member can create a context only organization administrators can restrict it with a security group.`
+
+https://circleci.com/account/plans
+Tells me the "orgs" I have permissions to, even though only one is an actual GitHub org and the other is just a user account
