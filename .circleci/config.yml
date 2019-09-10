@@ -8,7 +8,7 @@ jobs:
     steps:
       - checkout
       - run:
-          command: echo "Hello sample macOS build!"
+          command: echo "this is a fork with Build forked pull requests off"
 
 workflows:
   build-and-test:
