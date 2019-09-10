@@ -8,8 +8,7 @@ jobs:
     - run:
         name: say hi
         command: |
-        wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-        sudo apt-get update
+        apt-key list
 workflows:
   version: 2
   my-build-workflow:
