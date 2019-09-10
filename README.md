@@ -7,10 +7,6 @@ Things to test & evaluate:
 - Admin/non-admin permissions
 - Context groups
 
-Invited angelisamaria (non-admin) to the team and this was reflected in CircleCI
-angelisamaria can see other team members (https://circleci.com/team/gh/angcci) and the # projects followed
-While logged in as angelisamaria, plan usage (https://circleci.com/gh/organizations/angcci/settings#usage) can be viewed
-
 # Create a context as angelisamaria
 https://circleci.com/gh/organizations/angcci/settings#contexts > `Create Context`
 Name: test > `create`
@@ -18,6 +14,7 @@ Error: Something unexpected happened
 https://circleci.com/docs/2.0/contexts/#creating-and-using-a-context
 `Note: Any organization member can create a context only organization administrators can restrict it with a security group.`
 angelisacci was able to create the context `test`, when viewing the org users page (https://circleci.com/gh/organizations/angcci/settings#users), only angelisacci is listed
+
 ## Steps taken to resolve this issue
 1. have angelisamaria follow project on Circle (https://circleci.com/gh/angcci/cci-sandbox-angcci-org) > `Follow Project` and am still unable to create a context as a non-admin
 2.  changing angelisamaria's role to owner (https://github.com/orgs/angcci/people) and still unable to create a context
@@ -46,8 +43,12 @@ ownerType: "ORGANIZATION"
 
 5. Downloading firefox and attemping to create a context that way annnndddd it worked..
 
+# Permissions
+Invited angelisamaria (non-admin) to the team and this was reflected in CircleCI
+angelisamaria can see other team members (https://circleci.com/team/gh/angcci) and the # projects followed
+While logged in as angelisamaria, plan usage (https://circleci.com/gh/organizations/angcci/settings#usage) can be viewed
 
-
+https://github.com/orgs/angcci/people/angelisamaria/repositories/angcci/cci-sandbox-angcci-org views user permissions for a specific repo within the org
 
 https://circleci.com/account/plans
 Tells me the "orgs" I have permissions to, even though only one is an actual GitHub org and the other is just a user account
