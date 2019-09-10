@@ -1,4 +1,4 @@
-version: 2
+hoversion: 2
 jobs:
   build:
     machine:
@@ -6,8 +6,8 @@ jobs:
   
     steps:
     - run:
-        name: update apt
-        command: apt-get update
+        name: say hi
+        command: echo "hello"
 workflows:
   version: 2
   my-build-workflow:
