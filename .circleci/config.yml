@@ -8,7 +8,7 @@ jobs:
     steps:
       - checkout
       - run:
-          command: echo "Hello!"
+          command: echo "Hello sample macOS build!"
 
 workflows:
   build-and-test:
