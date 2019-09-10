@@ -1,25 +1,16 @@
-version: 2
+version: 2.1
 jobs:
-  build:
-    docker:
-    - image: circleci/ruby:latest
+  build-and-test:
+    macos:
+      xcode: "10.2.1"
+    environment:
+      FL_OUTPUT_DIR: output
     steps:
-    - checkout
-    - run:
-        name: name of my build job step
-        command: |
-          echo "Hello, this is my build job"
-  test:
-    docker:
-    - image: circleci/python:2.7
-    steps:
-    - run:
-        name: name of my test job step
-        command: |
-          echo "image circleci/python:2.7"
+      - checkout
+      - run:
+          command: echo "Hello!"
+
 workflows:
-  version: 2
-  build-test-and-deploy:
+  build-and-test:
     jobs:
-    - build
-    - test
+      - build-and-test
