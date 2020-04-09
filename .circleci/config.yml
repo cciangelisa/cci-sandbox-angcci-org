@@ -14,4 +14,4 @@ workflows:
   build-test-and-deploy:
     jobs:
     - build:
-        context: test1
+        context: sandbox-team
