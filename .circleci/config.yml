@@ -6,7 +6,7 @@ jobs:
     steps:
     - checkout
     - run:
-        name: say hi with context
+        name: say hi
         command: |
           echo ${SAY_HELLO}
 workflows:
