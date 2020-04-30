@@ -8,7 +8,7 @@ jobs:
     - run:
         name: say hi via context
         command: |
-          echo ${SAY_HELLO}
+          exit 1
 workflows:
   version: 2
   build-test-and-deploy:
