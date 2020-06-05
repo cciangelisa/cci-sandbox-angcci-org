@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
@@ -7,11 +7,9 @@ jobs:
     - checkout
     - run:
         name: say hi
-        command: |
-          exit 1
+        command: echo "hello"
 workflows:
   version: 2
   build-test-and-deploy:
     jobs:
-    - build:
-        context: sandbox-context
+    - build
