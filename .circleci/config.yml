@@ -1,13 +1,13 @@
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
-    - image: circleci/node:latest
+    - image: circleci/node
     steps:
     - checkout
     - run:
         name: say hi
-        command: echo "Hello"
+        command: echo "hello"
 workflows:
   version: 2
   build-test-and-deploy:
