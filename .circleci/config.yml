@@ -6,7 +6,7 @@ jobs:
     steps:
     - checkout
     - run:
-        name: say hi via context
+        name: say hi
         command: |
           exit 1
 workflows:
